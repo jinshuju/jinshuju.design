@@ -10,7 +10,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Container
+  Container,
+  Row,
+  Col
 } from "reactstrap";
 
 import "./index.scss";
@@ -32,25 +34,26 @@ class Header extends React.Component {
   render() {
     return (
       <Navbar color="faded" light expand="md">
-        <NavbarBrand href="/">Jinshuju Design</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/components/">品牌</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">市场</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">产品</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
+        <Container>
+          <NavbarBrand href="/">Jinshuju Design</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/brand/overview">品牌</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/marketing">市场</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/product">产品</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
       </Navbar>
     );
   }
-
 }
 
 const TemplateWrapper = ({ children }) => (
