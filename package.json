@@ -4,12 +4,16 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bootstrap": "4.0.0-beta.2",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-netlify": "^1.0.8",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.13",
     "gatsby-source-filesystem": "^1.5.8",
-    "gatsby-transformer-remark": "^1.7.21"
+    "gatsby-transformer-remark": "^1.7.21",
+    "react-bootstrap": "^0.31.5",
+    "reactstrap": "^5.0.0-alpha.4"
   },
   "keywords": [
     "gatsby"

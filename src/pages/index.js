@@ -1,14 +1,20 @@
 import React from "react"
 import Link from "gatsby-link"
+import {Container, Row, Col} from "reactstrap"
 
 export default ({ data }) => {
 
   return (
-    <div>
-      <h1>
-        Amazing Pandas Eating Things
-      </h1>
-      <h4>
+    <Container>
+      <Row>
+        <Col md={4}>品牌</Col>
+        <Col md={4}>市场</Col>
+        <Col md={4}>产品</Col>
+      </Row>
+
+      <Row>
+        <Col xs={12}>
+          <h4>
         {data.allMarkdownRemark.totalCount} Posts
       </h4>
       {data.allMarkdownRemark.edges.map(({ node }) =>
@@ -24,7 +30,11 @@ export default ({ data }) => {
           </p>
         </div>
       )}
-    </div>
+        </Col>
+      </Row>
+
+    </Container>
+
   )
 }
 
