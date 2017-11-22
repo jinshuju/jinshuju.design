@@ -56,6 +56,16 @@ class Header extends React.Component {
   }
 }
 
+const Footer = () => {
+  return (
+    <footer>
+      <Container>
+        Powered by <a href="https://jinshuju.net">Jinshuju</a>
+      </Container>
+    </footer>
+  )
+}
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -72,6 +82,8 @@ const TemplateWrapper = ({ children }) => (
     <Header />
 
     {children()}
+
+    <Footer />
   </div>
 );
 
