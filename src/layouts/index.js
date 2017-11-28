@@ -35,12 +35,12 @@ class Header extends React.Component {
     return (
       <Navbar color="faded" light expand="md">
         <Container>
-          <NavbarBrand href="/">Jinshuju Design</NavbarBrand>
+          <Link to="/" className="navbar-brand">Jinshuju Design</Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/brand/overview">品牌</NavLink>
+                <Link to="/brand/overview/" className="nav-link">品牌</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="/marketing">市场</NavLink>

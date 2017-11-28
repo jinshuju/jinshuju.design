@@ -1,6 +1,7 @@
 import React from "react";
 import {Container, Row, Col} from "reactstrap"
 import { Helmet } from "react-helmet";
+import Link from "gatsby-link";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -21,22 +22,22 @@ export default ({ data }) => {
         <Col md="3" xs="12">
           <ul>
             <li>
-              <a href="/brand/overview">品牌准则</a>
+              <Link to="/brand/overview">品牌准则</Link>
             </li>
             <li>
-              <a href="/brand/writing">写作风格</a>
+              <Link to="/brand/writing">写作风格</Link>
             </li>
             <li>
-              <a href="/brand/color">颜色</a>
+              <Link to="/brand/color">颜色</Link>
             </li>
             <li>
-              <a href="/brand/illustration">插画/配图</a>
+              <Link to="/brand/illustration">插画/配图</Link>
             </li>
             <li>
-              <a href="/brand/typography">字体与排版</a>
+              <Link to="/brand/typography">字体与排版</Link>
             </li>
             <li>
-              <a href="/brand/logo">Logo</a>
+              <Link to="/brand/logo">Logo</Link>
             </li>
           </ul>
         </Col>
