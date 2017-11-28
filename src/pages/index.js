@@ -3,13 +3,13 @@ import Link from "gatsby-link";
 import { Container, Row, Col, Card, CardBody, CardTitle, CardSubtitle, CardText, Button, CardLink } from "reactstrap";
 
 const HomeBlock = props => (
-  <Card>    
+  <Card>
     <CardBody>
-      <CardTitle>{ props.name }</CardTitle>      
+      <CardTitle>{ props.name }</CardTitle>
       <CardText>
         { props.description }
       </CardText>
-      <CardLink href={props.link }>查看</CardLink>
+      <Link to={props.link } className="card-link">查看</Link>
     </CardBody>
   </Card>
 );

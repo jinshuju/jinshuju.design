@@ -40,7 +40,7 @@ class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
               <NavItem>
-                <Link to="/brand/overview/" className="nav-link">品牌</Link>
+                <Link to="/brand/overview" className="nav-link">品牌</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="/marketing">市场</NavLink>
