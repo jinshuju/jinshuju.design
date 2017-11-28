@@ -1,10 +1,22 @@
 import React from "react";
 import {Container, Row, Col} from "reactstrap"
+import { Helmet } from "react-helmet";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Container>
+      <Helmet>
+        <title>{post.frontmatter.title}</title>
+        <meta
+          name="description"
+          content={
+            post.frontmatter.excerpt
+              ? post.frontmatter.excerpt
+              : post.excerpt
+          }
+        />
+      </Helmet>
       <Row>
         <Col md="3" xs="12">
           <ul>
